@@ -112,11 +112,20 @@ public class Comparacion_de_dos_numeros extends javax.swing.JFrame {
         String num1 = jTFNum1.getText();
         String num2 = jTFNum2.getText();
         
+        if (!num1.contains("123456789")) {
+            jLRes.setText(" Debe contener un numero");
+        }
+        
+        if (!num2.contains("123456789")) {
+            jLRes.setText(" Debe contener un numero");
+        }
+        
         String newNum1 = num1.replace(",", ".");
         String newNum2 = num2.replace(",", ".");
         
         Double number1 = Double.parseDouble(num1);
         Double number2 = Double.parseDouble(num2);
+        
         
         compararNumeros(number1, number2);
        
@@ -125,18 +134,19 @@ public class Comparacion_de_dos_numeros extends javax.swing.JFrame {
 
     public void compararNumeros(double num1 ,double num2){
         
+      
+            if(num1 > num2){
+                jLRes.setText( "Numero 1 es " + num1 + " y el Numero 2 es "
+                        + num2 + ". Por tanto el numero 1 (" + num1
+                        + ") es mayor que el número 2 (" + num2 +")");
+            } else if (num1 < num2) {
+                jLRes.setText( "Numero 1 es " + num1 + " y el Numero 2 es "
+                        + num2 + ". Por tanto el numero 1 (" + num1 + ") es menor que el número 2 (" + num2 +")");
+            } else {
+                jLRes.setText( "Numero 1 es " + num1 + " y el Numero 2 es "
+                        + num2 + ". Por tanto el numero 1 (" + num1 + ") es igual al número 2 (" + num2 +")");
+            }
         
-        if(num1 > num2){
-            jLRes.setText( "Numero 1 es " + num1 + " y el Numero 2 es "
-                    + num2 + ". Por tanto el numero 1 (" + num1
-                    + ") es mayor que el número 2 (" + num2 +")");
-        } else if (num1 < num2) {
-            jLRes.setText( "Numero 1 es " + num1 + " y el Numero 2 es "
-                    + num2 + ". Por tanto el numero 1 (" + num1 + ") es menor que el número 2 (" + num2 +")");
-        } else {
-            jLRes.setText( "Numero 1 es " + num1 + " y el Numero 2 es "
-                    + num2 + ". Por tanto el numero 1 (" + num1 + ") es igual al número 2 (" + num2 +")");
-        }
     }
     /**
      * @param args the command line arguments
