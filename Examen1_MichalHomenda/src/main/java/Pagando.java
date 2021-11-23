@@ -172,15 +172,17 @@ public class Pagando extends javax.swing.JDialog {
     }//GEN-LAST:event_rbBizumMouseClicked
 
     private void jbLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbLimpiarActionPerformed
-        // TODO add your handling code here:
+        // Limpia la etiqueta
          jLabelPregunta.setText(" ");
-        
+        //Limpia el radio group
            rGPago.clearSelection();
     }//GEN-LAST:event_jbLimpiarActionPerformed
 
     private void jbFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbFinalizarActionPerformed
-        // TODO add your handling code here:
+        // Hace que salte el mensaje en un pop up
         JOptionPane.showMessageDialog(this, "Compra finalizada");
+        
+        //cierra todo el sistema al cerrarse la ventana
         System.exit(0);
         
     }//GEN-LAST:event_jbFinalizarActionPerformed
