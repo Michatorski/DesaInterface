@@ -20,7 +20,7 @@ public class EjercicioVentana5 extends javax.swing.JFrame{
         setBounds(1000, 100, 400, 400);
         setResizable(false);
         jButton.setText("Empezar");
-        jButton.setBounds(WIDTH, WIDTH, WIDTH, HEIGHT);
+        jButton.setBounds(20, 900, 100, 30);
         add(jButton);
     }
     
