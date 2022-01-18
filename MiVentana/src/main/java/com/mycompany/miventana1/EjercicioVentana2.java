@@ -11,7 +11,7 @@ package com.mycompany.miventana1;
 public class EjercicioVentana2 extends javax.swing.JFrame{
     
     public EjercicioVentana2(){
-        setBounds(600, 300, 600, 600);
+        setBounds(900, 600, 600, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
     }

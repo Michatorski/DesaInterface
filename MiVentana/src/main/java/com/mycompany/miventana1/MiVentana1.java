@@ -24,8 +24,8 @@ public class MiVentana1 extends javax.swing.JFrame {
         setResizable(false);
     //Titulo
         setTitle("Mi Ventana");
-    //Cambiar Color
-        setBackground(Color.yellow);
+    //Cambiar Color a base de coger el contenido panel 'Pane' 
+        getContentPane().setBackground(Color.yellow);
     //Centrar la ventana
         setLocationRelativeTo(null);
     }

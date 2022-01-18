@@ -19,9 +19,13 @@ public class EjercicioVentana5 extends javax.swing.JFrame{
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setBounds(1000, 100, 400, 400);
         setResizable(false);
+        setLayout(null);
+        
+        //boton
+         add(jButton);
         jButton.setText("Empezar");
-        jButton.setBounds(20, 900, 100, 30);
-        add(jButton);
+        jButton.setBounds(250, 10, 100, 30);
+       
     }
     
     public static void main(String[] args) {
